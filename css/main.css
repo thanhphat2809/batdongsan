@@ -1,0 +1,686 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+	margin: 0;
+	padding: 0;
+}
+.all
+{
+	width: 100%;
+	height: 100%;
+	
+}
+.header
+{
+	width: 100%;
+	height: 100px;
+	background-color: rgba(253,253,253,0.70);
+	position: fixed;
+	z-index: 500;
+}
+.logo
+{
+	width: 25%;
+	height: 100px;
+	background-color:rgba(253,253,253,0.70);
+	float: left;
+	position: relative;
+}
+.logo img
+{
+	position: absolute;
+	top:10px;
+	left: 50px;
+	}
+.manu
+{
+	width: 75%;
+	height: 100px;
+	background-color:rgba(253,253,253,0.70);
+	float: right;
+	
+}
+.manu ul 
+{
+	list-style: none;
+	margin-right: 40px;
+	
+}
+.manu ul li
+{
+	float:right;
+	font-size: 20px;
+	padding: 25px 30px 25px 20px;
+    color: rgba(53,52,52,1.00);
+	position: relative;
+	font-family: manu;
+	text-transform: uppercase;
+
+}
+@font-face {
+  font-family: manu;
+  src: url("../font/RobotoCondensed-Regular.ttf");
+}
+.manu ul li a
+{
+	text-decoration: none;
+	color: rgba(51,51,51,1.00);
+}
+.manu ul li a:hover
+{
+	text-decoration: none;
+	color: #D42030;
+}
+.manu ul li ul
+{
+	position: absolute;
+	top: 78px;
+	left: -40px;
+	visibility: hidden;
+	
+}
+.manu ul li ul li
+{
+	font-size: 18px;
+	width: 200px;
+	background-color: rgba(191,187,194,0.8);
+	
+}
+.manu ul li:hover 
+{
+	border-bottom: rgba(211,30,39,1.00) 2px solid;
+	
+}
+.manu ul li ul li:hover
+{
+	background-color: rgba(242,246,245,0.6);
+	border-bottom: none;
+}
+
+.manu ul li:hover ul
+{
+	visibility: visible;
+}
+
+.home
+{
+	width: 100%;
+	height: 700px;
+	background: url("../images/home3.jpg");
+	box-sizing: border-box;
+	
+}
+.table
+{
+	width: 80%;
+	height: 450px;
+	position: absolute;
+	top: 150px;
+	left: 250px;
+	
+}
+.table1
+{
+	width: 400px;
+	height: 100%;
+	animation: fadeInUpBig 1s 2s forwards;
+	opacity: 0;
+
+}
+.btn
+{
+width: 100px;
+height:50px;
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: hsla(227,45%,20%,1.00);
+  cursor: pointer;
+  font-size: 18px;
+	animation: fadeInUpBig 1s 2s forwards;
+	opacity: 0;
+}
+
+.active {
+  background-color: hsla(355,74%,48%,1.00);
+}
+.table2
+{
+	width: 300px;
+	height: 100%;
+	
+	position: relative;
+}
+.table21
+{
+	width: 400px;
+	height: 400px;
+	background-color: rgba(251,251,251,0.80);
+	position: absolute;
+	top:50px;
+	border-top: rgba(212,32,48,1.00) 2px solid;
+}
+.table22
+{
+	width: 90%;
+	height: 50px;
+	box-sizing: border-box;
+	margin-left: 10px;
+	font-family: noidung;
+}
+.table23
+{
+	width: 120px;
+	height: 50px;
+	float: left;
+	margin-left: 20px;
+
+}
+.table21 button
+{
+	width: 200px;
+	height: 50px;
+	position: absolute;
+	right: 100px;
+	font-family: noidung;
+}
+.table21 button:hover
+{
+	background-color: rgba(247,91,94,1.00);
+}
+.table24
+{
+	width: 120px;
+	height: 50px;
+	float: right;
+	margin-right: 20px;
+	font-family: noidung;
+}
+
+select {
+  width: 100%;
+  height: 50px;
+  padding: 16px 20px;
+  border: 1px rgba(21,21,21,1.00) solid; 
+  border-radius: 4px;
+  background-color: rgba(241,241,241,0.8);
+	font-family: noidung;
+	
+}
+.mid
+{
+	width: 100%;
+	height: 400px;
+	background-color:rgba(242,242,242,1.00);
+	 display: flex;
+  justify-content: center;
+	padding-top: 5%;
+	box-sizing: border-box;
+	
+}
+.midcon
+{
+	width: 80%;
+	height: 80%;
+	background-color: rgba(242,242,242,1.00);
+	
+}
+.midcon2
+{
+	width: 100%;
+	height: 50%;
+	background-color: rgba(242,242,242,1.00);
+	display: flex;
+  justify-content: center;
+	
+}
+.noidung
+{
+	width: 33.33%;
+	height: 100%;
+	background-color: rgba(242,242,242,1.00);
+	float: left
+}
+.imgnoidung
+{
+	width: 25%;
+	height: 100%;
+	background-color: rgba(242,242,242,1.00);
+	float: left;
+}
+.textnoidung
+{
+	width: 75%;
+	height: 100%;
+	background-color: rgba(242,242,242,1.00);
+	float: right;
+	padding:1% 5% 5% 5%;
+	box-sizing: border-box;
+	letter-spacing: 1.1px;
+	font-family: noidung;
+}
+@font-face {
+  font-family: noidung;
+  src: url("../font/RobotoCondensed-Regular.ttf");
+}
+.most
+{
+	width: 100%;
+	height: 900px;
+	background-color:  rgba(247,247,247,1.00);
+	
+}
+.textmost
+{
+	width: 100%;
+	height: 250px;
+	background-color: #F7F7F7;
+	padding: 6% 0% 0% 0%;
+	box-sizing: border-box;
+	text-align: center;
+	
+		
+}
+.imgmost
+{
+	width: 80%;
+	height: 500px;
+	background-color:  rgba(247,247,247,1.00);
+	margin-left: 10%;
+}
+@font-face{
+	font-family: most;
+	src: url("../font/RobotoCondensed-Bold.ttf");
+}
+.imgmost1
+{
+	width: 30%;
+	height: 100%;
+	background-color: gold;
+	float: left;
+	margin-left: 2.5%;
+	
+	
+}
+.imgmost2{
+	width: 100%;
+	height: 200px;
+	background-color: antiquewhite;
+	position: relative;
+}
+.giatot
+{
+	width: 120px;
+	height: 30px;
+	background-color: #D62030;
+	position: absolute;
+	bottom: 150px;
+	border-bottom-right-radius: 8px;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 5px;
+	font-family: noidung;
+	color: #F7F7F7;
+}
+.textmost1{
+	width: 100%;
+	height: 300px;
+	background-color: #FFFFFF;
+	box-sizing: border-box;
+	padding: 10px;
+	letter-spacing: 0.5px;
+	font-family: noidung;
+	
+
+}
+.imgmost1 .textmost1 a
+{
+	text-decoration: none;
+	color: #1D274A;
+}
+.imgmost1 .textmost1 a:hover b
+{
+	color: #D62030;
+}
+
+.iconmost
+{
+	width: 45px;
+	height: 45px;
+	background-color: #FFFFFF;
+	float: left;
+	
+}
+.price
+{
+	width: 100%;
+	height: 50px;
+	background-color: ;
+	margin-top: 70px;
+}
+button
+{
+	background-color: #D62030;
+	color: #F2F2F2;
+	width: 100px;
+	height: 30px;
+	border: none;
+	margin-top: 20px;
+	margin-left: 81%;
+	cursor: pointer;
+	
+}
+button a
+{
+	text-decoration: none;
+	color: aliceblue;
+}
+.contact
+{
+	width: 100%;
+	height: 500px;
+	background-color: cadetblue;
+	
+}
+.textcont
+{
+	width: 45%;
+	height: 500px;
+	background-color: rgba(39,38,42,1.00);
+	float: left;
+	color: aliceblue;
+	text-align: right;
+	padding: 7%;
+	box-sizing: border-box;
+	letter-spacing: 0.5px;
+	font-family: noidung;
+	position: relative;
+	
+}
+.textcont button
+{
+	width: 150px;
+	height: 30px;
+	background-color: #27262A;
+	border: 1px #9F323F solid;
+	position: absolute;
+	right: 110px;
+}
+
+.imgcont
+{
+	width: 55%;
+	height: 500px;
+	background-color: beige;
+	float: right;
+}
+
+.sale{
+	width: 100%;
+	height: 700px;
+	background-color: #F2F2F2;
+	
+}
+.imgsale1
+{
+	width: 250px;
+	height: 400px;
+	background-color: darkgoldenrod;
+	margin-left: 2%
+		
+}
+.imgsale2{
+	width: 100%;
+	height: 50%;
+	background-color: antiquewhite;
+}
+.textsale2{
+	width: 100%;
+	height: 50%;
+	background-color: #ffffff;
+	text-align: center;
+	padding-top: 30px;
+	font-family: noidung;
+	
+}
+
+.textsale
+{
+	width: 100%;
+	height: 200px;
+	background-color: f2f2f2;
+	text-align: center;
+	padding-top: 70px;
+	box-sizing: border-box;
+	
+		
+}
+
+.imgsale
+{
+	width: 100%;
+	height: 500px;
+	background-color: f2f2f2;
+	 display: flex;
+  justify-content: center;
+
+}
+.iconsale{
+	width: 100%;
+	height: 50px;
+	margin-top: 35px;
+	border-top: #F2F2F2 solid;
+	display: flex;
+  justify-content: center;
+}
+.iconsale1{
+	width: 30px;
+	height: 30px;
+	background-color: aqua;
+	float: left;
+	margin: 10px;
+}
+.book
+{
+	width: 100%;
+	height: 150px;
+	background-color: #F2F2F2;
+	display: flex;
+	justify-content: center;
+	
+	
+}
+.book1
+{
+	width: 90%;
+	height: 150px;
+	background-color: #27384A;
+	box-sizing: border-box;
+	padding-top: 50px;
+	padding-left: 60px;
+	position: relative;color: #DBDBDB;
+	font-family: noidung;
+}
+.book1 button
+{
+	width: 130px;
+	height: 40px;
+	border-radius: 20px;
+	position: absolute;
+	top: 30px;
+	right: 80px;
+	font-family: noidung;
+
+	
+}
+.update
+{
+	width: 100%;
+	height: 500px;
+	background-color: beige;
+	
+		
+}
+
+.textupdate
+{
+	width: 100%;
+	height: 200px;
+	background-color:#F2F2F2;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 70px;
+		
+}
+.imgupdate
+{
+	width: 100%;
+	height: 300px;
+	background-color: #F2F2F2;
+	 display: flex;
+  justify-content: center;
+	
+	
+}
+
+.imgupdate1
+{
+	width: 350px;
+	height: 200px;
+	background:url("../images/tintuc11.jpg");
+	margin: 2%;
+}
+.imgupdate2
+{
+	width: 350px;
+	height: 200px;
+	background:url("../images/tintuc22.jpg");
+	margin: 2%;
+}
+.imgupdate3
+{
+	width: 350px;
+	height: 200px;
+	background:url("../images/tintuc33.jpg");
+	margin: 2%;
+}
+.footer
+{
+	width: 100%;
+	height: 500px;
+	background-color:rgba(39,56,74,1.00);
+	 display: flex;
+  justify-content: center;
+  align-items: center;
+	box-sizing: border-box;
+	
+		
+}
+.ndfooter
+{
+	width: 30%;
+	height: 500px;
+	margin: 30px;
+	color: hsla(0,0%,76%,1.00);
+	box-sizing: border-box;
+	font-family: noidung;
+}
+.logofooter
+{
+ width: 100%;
+	height: 150px;
+	background-color: rgba(39,56,74,1.00);
+	padding-top: 50px;
+	box-sizing: border-box;
+	padding-left: 130px;
+	
+}
+.textfooter
+{
+	width: 100%;
+	height: 250px;
+	background-color: rgba(39,56,74,1.00);
+	-moz-column-count: 2;
+-moz-column-gap: 5px;
+-webkit-column-count: 2;
+-webkit-column-gap: 5px;
+column-count: 2;
+column-gap: 5px;
+	padding-top: 25px;
+	color: aliceblue;
+	box-sizing: border-box;
+}
+.ndfooter .textfooter ul 
+{
+	color: hsla(0,0%,76%,1.00);
+	margin: 0;
+}
+.ndfooter .textfooter ul li
+{
+	padding: 8px
+}
+.ndfooter .textfooter ul li:hover
+{
+	color: rgba(212,32,48,1.00);
+}
+.ndfooter .textfooter ul li a
+{
+	color: hsla(0,0%,76%,1.00);
+}
+.ndfooter .textfooter ul li a:hover
+{
+	color:  rgba(212,32,48,1.00);
+}
+.copy
+{
+	width: 100%;
+	height: 100px;
+	background-color: blue;
+}
+.seach
+{
+	width: 300px;
+	height: 50px;
+	background-color: antiquewhite;
+	position: absolute;
+	top: 4100px;
+	left: 1080px;
+	border-radius: 10px;
+}
+.seach1
+{
+	width: 70%;
+	height: 50px;
+	background-color: aquamarine;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	float: left;
+}
+.seach2
+{
+	width: 30%;
+	height: 50px;
+	background-color: burlywood;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	float: right;
+}
+.seach2 button
+{
+	width: 90px;
+	height: 50px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+input {
+  width:210px;
+  height: 45px;
+	position: absolute;
+	right: 90px;
+	border
+}
